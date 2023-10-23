@@ -1,0 +1,4 @@
+SELECT film.title, film.rental_rate
+FROM film
+ORDER BY film.rental_rate DESC
+LIMIT 5;

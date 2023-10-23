@@ -1,0 +1,6 @@
+SELECT category.name AS Nama_Kategori, COUNT(film_category.category_id) AS Jumlah_Film
+FROM film_category
+JOIN category ON film_category.category_id = category.category_id
+GROUP BY category.name
+ORDER BY Jumlah_Film DESC
+LIMIT 3;

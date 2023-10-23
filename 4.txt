@@ -1,0 +1,6 @@
+Disini saya asumsikan ada tabel actor karena saya cek di sample tabel ga ada name untuk actor
+
+SELECT film.title, film.release_year, actor.name
+FROM film
+JOIN film_actor ON film.film_id = film_actor.film_id
+JOIN actor ON film_actor.actor_id = actor.actor_id;
